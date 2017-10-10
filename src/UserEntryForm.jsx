@@ -12,6 +12,13 @@ class UserEntryForm extends React.Component {
     this.props.bottomUpData(dataIn);
   }
 
+  resetForm () {
+    document.getElementById("first_name").value = '';
+    document.getElementById("last_name").value = '';
+    document.getElementById("phone").value = '';
+    document.getElementById("email").value = '';
+    document.getElementById("address").value = '';
+  }
 
   render() {    
     return(    
@@ -26,7 +33,8 @@ class UserEntryForm extends React.Component {
         <input className="form-control" type="email"  id="email" name="email" placeholder="Email" value = {this.props.email}/><br />
         <label className="col-12 text-left">Address:</label>
         <textarea className="form-control" id="address" name="Address" placeholder="Address" value = {this.props.address}/><br />
-        <button className="btn btn-primary btn-lg" onClick={()=>this.submitDetails()}>Submit</button>
+        <button className="btn btn-primary btn-md col-md-4" onClick={()=>this.submitDetails()}>Submit</button>
+        <button className="btn btn-warning btn-md col-md-4 margin-left-1" onClick={()=>this.resetForm()}>Reset</button>
       </div>
     )
   }
