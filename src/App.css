@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 20px;
+}
+
+.App-header {
+  background-color: #222;
+  //height: 150px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-left-menu {
+  text-align: left;
+  width: 100%;
+  font-family: fantasy;
+  font-weight: 600;
+  /*border-right: 1px solid #ddd;*/
+  float: left;
+  height:100%;
+}
+
+.App-right-container{
+  width: 80%;
+  font-family: fantasy;
+  font-weight: 600;
+  margin-top: 1em;
+  height:100%;
+  /*border: 1px solid #ddd;*/
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.right-container {
+  font-family: fantasy;
+  margin-top: 1em;
+  height:100%;
+}
+
+.result-list {
+  padding: 2px;
+  font-family: fantasy;
+  font-size: 1rem;
+}
